@@ -14,7 +14,7 @@ This is about my individual project. The learning outcomes which I will have to 
 - Software quality
 - CI/CD
 - Professional
-You can find the evidence [here](../).
+You can find the evidence [here](../main/Individual-project).
 #### Group project
 This is about my group project. The learning outcomes which I will have to fulfill are these:
 - Agile method
@@ -23,7 +23,7 @@ This is about my group project. The learning outcomes which I will have to fulfi
 - Cultural differences and ethics
 - Professional
 - Web application
-You can find the evidence [here](../).
+You can find the evidence [here](../main/Group-project).
 ## External
 This category will show things that are outside of this repository.
 ### Proof of concepts (POCs)
