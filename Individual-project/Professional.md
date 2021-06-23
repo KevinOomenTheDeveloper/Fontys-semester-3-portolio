@@ -7,7 +7,7 @@ I started with the idea to create a cards against humanity application. Cards ag
 
 ### DOT-framework documentation
 I had to create 2 research documents aswell. Both of them had to be written in the DOT-framework standard. These are both of the documents:
-#### [Authetication research](../Individual-project/Documentation/Feedpulse-semester-3.pdf)
+#### [Authetication research](../Individual-project/Documentation/Authentication-research.pdf)
 #### [integration test research](../Individual-project/Documentation/Integration-test-research.pdf)
 
 ### [Feedpulse](../Individual-project/Documentation/Feedpulse-semester-3.pdf)
