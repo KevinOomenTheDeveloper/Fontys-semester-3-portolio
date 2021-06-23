@@ -39,7 +39,7 @@ In this document I will give refrences to the proof for the learning outcomes of
 >**Professional manner:**
 >You actively ask and apply feedback from stakeholders and advise them on the most optimal technical and design (architectural) solutions.
 >You choose and substantiate solutions for a given problem.
-### [Proof](../Group-project/Profesional.md)
+### [Proof](../Group-project/Professional.md)
 
 ## Web application
 ### Defintion
