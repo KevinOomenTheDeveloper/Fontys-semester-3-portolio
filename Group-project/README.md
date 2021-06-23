@@ -1,4 +1,4 @@
-# Individual project
+# Group project
 In this document I will give refrences to the proof for the learning outcomes of the group project
 
 ## Agile method
