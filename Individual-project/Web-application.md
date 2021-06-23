@@ -1,5 +1,8 @@
 ## Web application
-In this document I will Show what i have done for the Web application learning outcome.
+In this document I will Show what I have done for the Web application learning outcome.
+
+### Context
+We had to create a `full-stack` web application for this learning outcome. A `full-stack` web application is a application that makes use of a front-/back-end. So I will have to create a application that has a front-end that communicates with a functioning backend.
 
 ### Personal development
 In this project I have had a lot of personal development. I started working on this project by trying out new thing and research some frameworks. I have looked at: `Svelte`, `React`, `Spring`, `Quarkus` and `Dropwizard`. But in the end I choose for a `React` front-end and a `Spring` backend. I choose for these because we used them in the group project aswell and thath would mean that it would become easier to understand these frameworks because I would work on them in my individual project and in my group project. I did create a prove of concept for `Quarkus` which you can find here. Becasue of time management reasons I have had to take one part of my project and focus on that because i wouldn't have had enough time to create the entire application anymore. This was because of multitude of reasons. It took for example some time to understand `CI/CD` process and in first case i wanted to use `Quarkus` and `Svelte` as frameworks because I wanted to learn how these worked. But after sometime I chose to use `React` and `Spring` instead because these are very popular and have a large community behind them which will help with debuging bugs and implementing things I don't know yet. And because I was using these in my group project aswell. I chose to create the chat functionality of my application. I wanted to do this with websockets to integrate something I haven't used yet. You can find these projects at the end of this document.
