@@ -33,4 +33,4 @@ You implement a continuous integration and deployment solution (using e.g. Gitla
 You develop software as a team effort according to a prescribed software methodology and following team agreements. You are able to track your work progress and communicate your progress with the team.
 
 You  independently recognize and decide where your knowledge falls short to solve a software problem and  communicate which new knowledge and skills you need to learn.
-### [Proof](../Individual-project/Profesional.md)
+### [Proof](../Individual-project/Professional.md)
