@@ -53,4 +53,17 @@ jobs:
 ```
 This code makes it so that everytime something gets pushed to the main branch or whenever there is a pull request on the main brach that the code will be tested with the `React` test method. First of, it will set the node version to "15". After that it will do the needed configuration to run the test and after that it will install all project dependencies, build the application and test it afterwards.
 
-Now that we have added `CI` to the project it's time to look a bit deeper into `CD`. First of we will have to create a docker file for the application.
+Now that we have added `CI` to the project it's time to look a bit deeper into `CD`. First of we will have to create a `Dockerfile` for the application that will look like this:
+```dockerfile
+FROM node:alpine as build-step
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+#from build directory to /app in container
+COPY . .
+RUN npm run build
+from nginx
+#copies build output from build-step to hosting folder in nginx
+copy --from=build-step /app/build /usr/share/nginx/html
+```
+This `Dockerfile` is able to create a `Docker image` of of the application which will be the application running on nginx. You may ask: "Why would you want a `DockerFile` in here?". The `Dockerfile` is needed because i'm going to push a `Docker image` of of the application to `Docker hub`. This is where my CD comes in to play. I linked my Github account with Dockerhub so I can assign repositories on my account to be pushed onto Dockerhub automatically whenever something in the Main branch changes.
