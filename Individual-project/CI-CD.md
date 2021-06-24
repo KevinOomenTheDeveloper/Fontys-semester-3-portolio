@@ -68,11 +68,11 @@ copy --from=build-step /app/build /usr/share/nginx/html
 ```
 This `Dockerfile` is able to create a `Docker image` of of the application which will be the application running on nginx. You may ask: "Why would you want a `DockerFile` in here?". The `Dockerfile` is needed because i'm going to push a `Docker image` of of the application to `Docker hub`. This is where my CD comes in to play. I linked my Github account with Dockerhub so I can assign repositories on my account to be pushed onto Dockerhub automatically whenever something in the Main branch changes. My docker hub looks like this:
 
-![back-end-sonar-cloud](https://github.com/KevinOomenTheDeveloper/Fontys-semester-3-portolio/blob/main/Individual-project/Images/front-end-docker-hub.png)
+![back-end-sonar-cloud](../Individual-project/Images/front-end-docker-hub.png)
 
 You can add repositories to `Docker hub` by doing this:
 
-![back-end-sonar-cloud](https://github.com/KevinOomenTheDeveloper/Fontys-semester-3-portolio/blob/main/Individual-project/Images/front-end-docker-hub-registration.png)
+![back-end-sonar-cloud](../Individual-project/Images/front-end-docker-hub-registration.png)
 
 I have also made a `docker-compose` file which is able to start certain services all at once. It looks like this:
 ```yml
