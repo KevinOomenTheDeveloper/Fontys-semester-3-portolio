@@ -19,7 +19,7 @@ This is the project I used for my back-end. You will be anle to find it [here](h
 #### Login
 ![application-login](../Individual-project/Images/Application-login.png)
 #### Register
-![application-register](../Individual-project/Images/Application-register.png)
+![application-register](../Individual-project/Images/Application-registration.png)
 #### Chat
 ![application-chat-1](../Individual-project/Images/Application-chat-1.png)
 
