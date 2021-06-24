@@ -73,3 +73,63 @@ This `Dockerfile` is able to create a `Docker image` of of the application which
 You can add repositories to `Docker hub` by doing this:
 
 ![back-end-sonar-cloud](https://github.com/KevinOomenTheDeveloper/Fontys-semester-3-portolio/blob/main/Individual-project/Images/front-end-docker-hub-registration.png)
+
+I have also made a `docker-compose` file which is able to start certain services all at once. It looks like this:
+```yml
+version: '3.5'
+services:
+  keycloak:
+    container_name: keycloak
+    image: jboss/keycloak:13.0.0
+    restart: always
+    volumes:
+      - "./realm-export.json:/tmp/realm-export.json"
+    ports:
+      - "8080:8080"
+    environment:
+      KEYCLOAK_USER: ${KEYCLOAK_USER:-admin}
+      KEYCLOAK_PASSWORD: ${KEYCLOAK_PASSWORD:-admin}
+      DB_VENDOR: H2
+      KEYCLOAK_IMPORT: /tmp/realm-export.json
+      KEYCLOAK_FRONTEND_URL: http://localhost:8080/auth
+
+    frontend:
+      container_name: frontend
+      image: 409255/frontend
+      volumes:
+        - "./nginx.conf:/etc/nginx/nginx.conf"
+      ports:
+        - "80:80"
+      depends_on:
+        - keycloak
+        - backend
+
+    backend:
+      container_name: backend
+      image: 409255/backend
+      ports:
+        - "9012:9012"
+      env_file:
+        - backend.env
+      depends_on:
+        - keycloak
+        - chat-db
+
+    chat-db:
+      container_name: chat-db
+      image: mysql
+      command: --default-authentication-plugin=mysql_native_password
+      restart: always
+      environment:
+        MYSQL_ROOT_PASSWORD: test
+
+    adminer:
+    container_name: adminer
+    image: adminer
+    restart: always
+    ports:
+      - 9090:8080
+    depends_on:
+      - chat-db
+```
+This docker compose file will start: `Keycloak`, `React frontend`, `Spring backend`, `Mysql database` and `Adminer`. These services are needed to run the entire application at once. The compose file will get the front-/back-end docker images from `Docker hub`. There are also some environment variables that are being given by the `.env` file. 
