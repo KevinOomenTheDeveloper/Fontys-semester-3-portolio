@@ -17,12 +17,12 @@ This is the project I used for my back-end. You will be anle to find it [here](h
 
 ### Application screenshots
 #### Login
-![application-login](../Individual-project/Images/application-login.png)
+![application-login](../Individual-project/Images/Application-login.png)
 #### Register
-![application-register](../Individual-project/Images/application-register.png)
+![application-register](../Individual-project/Images/Application-register.png)
 #### Chat
-![application-chat-1](../Individual-project/Images/application-chat-1.png)
+![application-chat-1](../Individual-project/Images/Application-chat-1.png)
 
-![application-chat-2](../Individual-project/Images/application-chat-2.png)
+![application-chat-2](../Individual-project/Images/Application-chat-2.png)
 #### Logs
-![application-logs](../Individual-project/Images/application-logs.png)
+![application-logs](../Individual-project/Images/Application-logs.png)
