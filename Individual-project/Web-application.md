@@ -14,3 +14,15 @@ This is the project I used for my front-end. You will be able to find it [here](
 
 #### Spring back-end ("Chat service")
 This is the project I used for my back-end. You will be anle to find it [here](https://github.com/KevinOomenTheDeveloper/chat-service)
+
+### Application screenshots
+#### Login
+![application-login](../Individual-project/Images/application-login.png)
+#### Register
+![application-register](../Individual-project/Images/application-register.png)
+#### Chat
+![application-chat-1](../Individual-project/Images/application-chat-1.png)
+
+![application-chat-2](../Individual-project/Images/application-chat-2.png)
+#### Logs
+![application-logs](../Individual-project/Images/application-logs.png)
