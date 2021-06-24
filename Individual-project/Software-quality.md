@@ -13,7 +13,7 @@ As you can see there are a lot of different types of tests and this is just a fr
 ## Personal development
 I have learned a lot about tests this semester. I have learned how to create integration tests and how to implement static code analysis and I leaned how to create tests for Spring applications. I have learned how to implement `inegration tests` because of my group project and I learned how to use `static code analysis` from a fellow classmate. Now I will show some examples of integration tests I have implemented:
 ### React
-Sadly there wasn't much I could test in the `React` frontend because almost all functions were related to http request. So I will like to to show you a example from thr group project instead which I tried to implement in my own project but wouldn't work because of how I implemented `Keycloak` in my application. I tried to create a test to see if the application loads without failing. This is how whe did it in the group project:
+Sadly there wasn't much I could test in the `React` frontend because almost all functions were related to http request. So I will like to to show you a example from the group project instead which I tried to implement in my own project but wouldn't work because of how I implemented `Keycloak` in my application. After some research I finally knew how to mock the requests but when I knew it was already to late to extensivly try this out. From what I have gathered it should be able to be done with a testing framework called `Jest` but I haven't had the time yet to test this out. I tried to create a test to see if the application loads without failing. This is how whe did it in the group project:
 
 ```javascript
 test('renders without crashing', () => {
